@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Model in A-Frame</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="model" src="zakhar_text_scene_fixedZ.glb"></a-asset-item>
+      </a-assets>
+      
+      <a-entity gltf-model="#model" position="0 0 -5" rotation="0 0 0"></a-entity>
+      
+      <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
